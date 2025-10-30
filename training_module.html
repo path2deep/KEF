@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Literacy Training Module</title>
+    <style>
+        :root {
+            color-scheme: light dark;
+            --primary: #2a5d9f;
+            --accent: #f5a623;
+            --background: #f7f9fc;
+            --text: #1f2933;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), #173b6c);
+            color: #fff;
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem;
+            font-size: clamp(2rem, 3vw + 1rem, 3rem);
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem 3rem;
+        }
+
+        .module-overview,
+        .learning-objectives,
+        .schedule,
+        .resources {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 12px 32px rgba(23, 59, 108, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        h2 span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(42, 93, 159, 0.15);
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li + li {
+            margin-top: 0.6rem;
+        }
+
+        .schedule-item {
+            display: grid;
+            grid-template-columns: minmax(120px, 160px) 1fr;
+            gap: 1rem;
+            padding: 1rem 1.25rem;
+            border: 1px solid rgba(42, 93, 159, 0.12);
+            border-radius: 12px;
+            margin-top: 1rem;
+            background: rgba(247, 249, 252, 0.8);
+        }
+
+        .schedule-item strong {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .resources a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: #173b6c;
+            color: #fff;
+        }
+
+        @media (max-width: 640px) {
+            main {
+                margin: 1.5rem auto 2.5rem;
+                padding: 0 1rem 2rem;
+            }
+
+            .schedule-item {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Data Literacy Training Module</h1>
+        <p>Build confidence in interpreting, communicating, and leveraging data for better decision-making.</p>
+    </header>
+    <main>
+        <section class="module-overview">
+            <h2><span>01</span>Module Overview</h2>
+            <p>
+                This three-week training module introduces educators to the foundations of data literacy. Each cohort will explore
+                practical strategies for collecting, analyzing, and sharing student learning evidence in ways that inform instruction and
+                foster collaborative problem-solving.
+            </p>
+        </section>
+        <section class="learning-objectives">
+            <h2><span>02</span>Learning Objectives</h2>
+            <ul>
+                <li>Develop a shared vocabulary around data literacy and evidence-based instruction.</li>
+                <li>Practice using simple data tools to recognize trends, gaps, and outliers in student performance.</li>
+                <li>Design action plans that connect data insights to targeted instructional responses.</li>
+                <li>Establish routines for reflective dialogue and continuous improvement with grade-level teams.</li>
+            </ul>
+        </section>
+        <section class="schedule">
+            <h2><span>03</span>Session Schedule</h2>
+            <div class="schedule-item">
+                <strong>Week 1 · Foundations</strong>
+                <p>Explore core data literacy concepts, review ethical considerations, and examine sample data sets from classroom assessments.</p>
+            </div>
+            <div class="schedule-item">
+                <strong>Week 2 · Analysis Studio</strong>
+                <p>Learn to create visual summaries, identify instructional priorities, and draft student support hypotheses in collaborative breakouts.</p>
+            </div>
+            <div class="schedule-item">
+                <strong>Week 3 · Action & Reflection</strong>
+                <p>Prototype lesson adjustments, create implementation trackers, and plan peer feedback cycles to measure impact.</p>
+            </div>
+        </section>
+        <section class="resources">
+            <h2><span>04</span>Resources & Support</h2>
+            <ul>
+                <li><a href="https://www.oecd.org/education/ceri/assessing-21st-century-skills/" target="_blank" rel="noopener">OECD Data Literacy Framework</a></li>
+                <li><a href="https://databasic.io/en/" target="_blank" rel="noopener">DataBasic Activities</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/" target="_blank" rel="noopener">Collaborative Spreadsheet Template</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Questions? Reach out to the Professional Learning Team at <a href="mailto:training@kef.org">training@kef.org</a>.</p>
+    </footer>
+</body>
+</html>
